@@ -1,14 +1,13 @@
 /*
-Theme Name: WordPress-Bootstrap
+Theme Name: kinetic-bootstrap
 Author: Fred Block
-Description: WordPress theme with Bootstrap jumbotron
+Description: A custom WordPress theme for Kinetic Restoration.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: wordpress-bootstrap
-
-Make something cool.
+Text Domain: kinetic-bootstrap
 */
+
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
