@@ -12,8 +12,12 @@
 
     wp_enqueue_style( 'main_css',
                        get_template_directory_uri() . '/css/style.css' );
+
+    wp_enqueue_style( 'kinetic_css',
+                       get_template_directory_uri() . '/css/kinetic.css' );
   }
   add_action( 'wp_enqueue_scripts', 'theme_styles' );
+
 
 
   // JS //////////////////////////////////
@@ -44,6 +48,7 @@
   add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 
+
   // Menu support /////////////////////////////
 
   // add_filter( 'show_admin_bar', '__return_false' );
@@ -60,9 +65,11 @@
   add_action( 'init', 'register_theme_menus' );
 
 
+
   // post-thumbnails //////////////////////////////////
 
   add_theme_support( 'post-thumbnails' );
+
 
 
   // Widgets //////////////////////////////////
@@ -79,6 +86,7 @@
   }
 
 
+
   // Columns ///////////////////////////////////
   create_widget( 'Front Page Left',
                  'front-left',
@@ -89,6 +97,7 @@
   create_widget( 'Front Page Right',
                  'front-right',
                  'Displays on the right of the homepage' );
+
 
 
   // Sidebars //////////////////////////////////
