@@ -9,18 +9,19 @@
           <div class="page-header">
             <h1><?php the_title(); ?></h1>
           </div>
-
           <?php the_content(); ?>
 
+
+        <!-- fake 404 page -->
         <?php endwhile; else: ?>
 
           <div class="page-header">
             <h1>Oh No!</h1>
           </div>
-
           <p>No content is appearing for this page.</p>
 
         <?php endif; ?>
+
       </div>
 
       <?php get_sidebar(); ?>

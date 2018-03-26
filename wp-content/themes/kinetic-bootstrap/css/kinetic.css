@@ -590,9 +590,6 @@ a:hover {
   line-height: 1.2em;
   margin: 0px 0px 0px 0px;
   padding: 0px 30px 60px 30px;
-  /*text-shadow: */
-    -1px 1px 0px rgba(149, 173, 210, 1),
-    -2px 2px 0px rgba(149, 173, 210, 1);
   text-transform: uppercase;
 }
 

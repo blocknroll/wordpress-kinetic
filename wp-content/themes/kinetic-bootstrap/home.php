@@ -78,7 +78,6 @@
               </div>
             </div>
 
-
             <?php endwhile; endif; ?>
 
           </div>
@@ -121,10 +120,10 @@
           <article>
             <h2>Oh No!</h2>
           </article>
-
           <p>No content is appearing for this page.</p>
 
         <?php endif; ?>
+
       </div>
 
 
