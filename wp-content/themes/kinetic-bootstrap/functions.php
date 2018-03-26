@@ -11,10 +11,20 @@
                        '/css/ie10-viewport-bug-workaround.css' );
 
     wp_enqueue_style( 'main_css',
-                       get_template_directory_uri() . '/css/style.css' );
+                       get_template_directory_uri() .
+                       '/css/style.css' );
 
     wp_enqueue_style( 'kinetic_css',
-                       get_template_directory_uri() . '/css/kinetic.css' );
+                       get_template_directory_uri() .
+                       '/css/kinetic.css' );
+
+    wp_enqueue_style( 'pe-icon-social_css',
+                      get_template_directory_uri() .
+                      '/fonts/pe-icon-social/css/pe-icon-social.css' );
+
+    wp_enqueue_style( 'helper_css',
+                      get_template_directory_uri() .
+                      '/fonts/pe-icon-social/css/helper.css' );
   }
   add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
