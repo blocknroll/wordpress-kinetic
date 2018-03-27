@@ -30,7 +30,31 @@
 
 
 
-  // JS //////////////////////////////////
+// GOOGLE FONTS //////////////////////////////////
+
+  // Enqueue Google Fonts using a function
+  function load_google_fonts() {
+
+    // Setup font arguments
+    $query_args = array(
+      'family' => 'Open+Sans:300,700|Open+Sans+Condensed:300,300italic,700',
+      'subset' => 'latin,latin-ext',
+    );
+
+    // A safe way to register a CSS style file for later use
+    wp_register_style( 'google-fonts',
+                        add_query_arg( $query_args, "//fonts.googleapis.com/css" ),
+                        array(), null );
+
+    // A safe way to add/enqueue a CSS style file to a WordPress generated page
+    wp_enqueue_style( 'google-fonts' );
+  }
+
+  add_action( 'wp_enqueue_scripts', 'load_google_fonts' );
+
+
+
+// JS //////////////////////////////////
   function theme_js() {
 
     global $wp_scripts;
@@ -59,9 +83,9 @@
 
 
 
-  // Menu support /////////////////////////////
+// Menu support /////////////////////////////
 
-  // add_filter( 'show_admin_bar', '__return_false' );
+// add_filter( 'show_admin_bar', '__return_false' );
 
   add_theme_support( 'menus' );
 
@@ -76,13 +100,13 @@
 
 
 
-  // post-thumbnails //////////////////////////////////
+// post-thumbnails //////////////////////////////////
 
   add_theme_support( 'post-thumbnails' );
 
 
 
-  // Widgets //////////////////////////////////
+// Widgets //////////////////////////////////
   function create_widget($name, $id, $description) {
     register_sidebar(array(
       'name'          => __( $name ),
@@ -97,7 +121,7 @@
 
 
 
-  // Columns ///////////////////////////////////
+// Columns ///////////////////////////////////
   create_widget( 'Front Page Left',
                  'front-left',
                  'Displays on the left of the homepage' );
@@ -110,7 +134,7 @@
 
 
 
-  // Sidebars //////////////////////////////////
+// Sidebars //////////////////////////////////
   create_widget( 'Page Sidebar',
                  'page',
                  'Displays on the side of pages with a sidebar' );
