@@ -2,7 +2,7 @@
 
 
   <!-- INTRO      ===================================================== -->
-  <div id="intro" class="watermark_responsive img-responsive">
+  <div class="intro watermark_responsive img-responsive">
 
     <p><span class="dropCap">F</span>our industry experts committed
     themselves to a better restoration experience and <strong>KINETIC
