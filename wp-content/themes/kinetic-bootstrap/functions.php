@@ -30,30 +30,6 @@
 
 
 
-// GOOGLE FONTS //////////////////////////////////
-
-  // Enqueue Google Fonts using a function
-  function load_google_fonts() {
-
-    // Setup font arguments
-    $query_args = array(
-      'family' => 'Open+Sans:300,700|Open+Sans+Condensed:300,300italic,700',
-      'subset' => 'latin,latin-ext',
-    );
-
-    // A safe way to register a CSS style file for later use
-    wp_register_style( 'google-fonts',
-                        add_query_arg( $query_args, "//fonts.googleapis.com/css" ),
-                        array(), null );
-
-    // A safe way to add/enqueue a CSS style file to a WordPress generated page
-    wp_enqueue_style( 'google-fonts' );
-  }
-
-  add_action( 'wp_enqueue_scripts', 'load_google_fonts' );
-
-
-
 // JS //////////////////////////////////
   function theme_js() {
 
@@ -83,25 +59,40 @@
 
 
 
-// Menu support /////////////////////////////
+// Register Custom Navigation Walker /////////////////////////////
+  require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
 
-// add_filter( 'show_admin_bar', '__return_false' );
+  register_nav_menus( array(
+      'primary' => __( 'Primary Menu', 'kinetic-bootstrap' ),
+  ) );
 
-  add_theme_support( 'menus' );
 
-  function register_theme_menus() {
-    register_nav_menus(
-        array(
-          'header-menu' => __( 'Header Menu' )
-        )
-      );
+
+// GOOGLE FONTS //////////////////////////////////
+
+  // Enqueue Google Fonts using a function
+  function load_google_fonts() {
+
+    // Setup font arguments
+    $query_args = array(
+      'family' => 'Open+Sans:300,700|Open+Sans+Condensed:300,300italic,700',
+      'subset' => 'latin,latin-ext',
+    );
+
+    // A safe way to register a CSS style file for later use
+    wp_register_style( 'google-fonts',
+                        add_query_arg( $query_args, "//fonts.googleapis.com/css" ),
+                        array(), null );
+
+    // A safe way to add/enqueue a CSS style file to a WordPress generated page
+    wp_enqueue_style( 'google-fonts' );
   }
-  add_action( 'init', 'register_theme_menus' );
+
+  add_action( 'wp_enqueue_scripts', 'load_google_fonts' );
 
 
 
 // post-thumbnails //////////////////////////////////
-
   add_theme_support( 'post-thumbnails' );
 
 
@@ -141,4 +132,10 @@
   create_widget( 'Blog Sidebar',
                  'blog',
                  'Displays on the side of pages in the blog' );
+
+
+
+// Admin bar toggle /////////////////////////////
+  add_filter( 'show_admin_bar', '__return_false' );
+
 ?>

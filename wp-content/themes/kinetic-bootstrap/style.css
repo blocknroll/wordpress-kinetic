@@ -20,7 +20,7 @@ body {
 }
 
 .current-menu-item > a {
-  background: #000;
+  /* background: #000; */
 }
 
 @media (min-width:768px) {
@@ -55,7 +55,7 @@ body {
 }
 
 .current-menu-item > a, .current-menu-parent > a {
-  background: #000;
+  /* background: #000; */
 }
 
 .current-menu-parent li a {
