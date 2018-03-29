@@ -18,7 +18,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, footer  {
 }
 
 p, ul, li, a, footer  {
-  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  /* font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif; */
+  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
   /* font-weight: 300; */
 }
 
@@ -112,7 +113,9 @@ h2  {
   color: rgba(51, 51, 51, 1);
 }
 
-
+.slogan {
+  margin: 0 auto 60px auto;
+}
 
 
 
@@ -400,22 +403,25 @@ a:hover {
 /* CAROUSEL  ==================================================================== */
 
 #indexCarousel {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* Carousel base class */
 .carousel {
   max-width: 100%;
-  margin-top: 160px;
+  /* margin-top: 160px; */
+  margin: 40px auto 0 auto;
 }
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption  {
   color: rgba(255, 255, 255, 1);
   position: absolute;
-  right: 5%;
-  bottom: -3%;
-  left: 5%;
+  /* position: relative; */
+  right: 0%;
+  bottom: -1%;
+  /* bottom: 140px; */
+  left: 0%;
   padding-bottom: 20px;
   text-align: center;
   z-index: 10;
@@ -580,6 +586,12 @@ a:hover {
 
 
 /*  CONTENTS  ===========================================================   */
+
+.page-title {
+    padding-bottom: 0;
+    margin: 30px 0 0;
+    border-bottom: 0;
+}
 
 .watermark_responsive {
   height: auto;
@@ -1110,7 +1122,6 @@ footer address  {
 
   .carousel {
     max-width: 700px;
-    margin: 160px auto 0px auto;
   }
 
   .carousel-control .glyphicon-chevron-left,
