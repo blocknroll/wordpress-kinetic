@@ -128,10 +128,12 @@ h2  {
 
 body    {
   background-color: rgba(255, 255, 255, 1);
-  margin: 0px 0px 0px 0px;
   line-height: 1.2;
+  margin: 0;
+  padding: 120px 0 0 0;
   text-align: center;
-  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 hr {
@@ -651,7 +653,7 @@ a:hover {
 
 .intro   {
   background-color: rgba(255, 255, 255, 1);
-  margin: 120px auto 0px auto;
+  /* margin: 120px auto 0px auto; */
   max-width: 100%;
 }
 
@@ -1185,7 +1187,6 @@ footer address  {
 
   .watermark_responsive   {
     max-width: 700px;
-    margin: 0px auto 0px auto;
   }
 
   .watermark_responsive p  {
@@ -1272,10 +1273,5 @@ footer address  {
     background-color: rgba(52, 103, 157, 1);
     color: rgba(255, 255, 255, 1);
   }
-
-  /* .navbar-nav .open .dropdown-menu .dropdown-header,
-  .navbar-nav .open .dropdown-menu>li>a {
-    padding: 5px 15px 5px 15px;
-  } */
 
 }

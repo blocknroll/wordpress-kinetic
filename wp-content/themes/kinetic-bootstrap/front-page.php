@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-  <!-- INTRO      ===================================================== -->
+  <!-- INTRO ===================================================== -->
   <div class="intro watermark_responsive img-responsive">
 
     <p><span class="dropCap">F</span>our industry experts committed
@@ -14,7 +14,7 @@
 
 
 
-  <!-- Carousel      ===================================================== -->
+  <!-- CAROUSEL ===================================================== -->
   <div id="indexCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
 
@@ -167,7 +167,7 @@
 
     </div>
   </div>
-  <!-- End Carousel ===================================================== -->
+  <!-- END CAROUSEL ===================================================== -->
 
 
 
