@@ -11,7 +11,7 @@
         <div class="col-sm-12">
           <h1><?php the_title(); ?></h1>
 
-          <div class="overview">
+          <div class="overview img-responsive">
             <?php the_content(); ?>
           </div>
         </div>

@@ -62,6 +62,18 @@
       </div>
 
 
+      <!-- project overview ---------------------------------------------->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="overview">
+            <p>
+              <?php the_field('project_overview'); ?>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
       <!-- project images row ---------------------------------------------->
       <div class="row beforeAfter">
 
@@ -69,7 +81,7 @@
         <div class="col-sm-6">
           <a href="<?php the_permalink(); ?>">
             <?php
-            $thumbnail_id  = kdmfi_the_featured_image( 'featured-image-1', 'medium-thumb' );
+            $thumbnail_id = kdmfi_the_featured_image( 'featured-image-1', 'medium-thumb' );
             ?>
           </a>
           <p>Before</p>
@@ -79,7 +91,7 @@
         <div class="col-sm-6">
           <a href="<?php the_permalink(); ?>">
             <?php
-            $thumbnail_id  = kdmfi_the_featured_image( 'featured-image-2', 'medium-thumb' );
+            $thumbnail_id = kdmfi_the_featured_image( 'featured-image-2', 'medium-thumb' );
             ?>
           </a>
           <p>After</p>
