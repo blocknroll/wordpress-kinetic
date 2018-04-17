@@ -14,10 +14,6 @@
                        get_template_directory_uri() .
                        '/style.css' );
 
-    wp_enqueue_style( 'kinetic_css',
-                       get_template_directory_uri() .
-                       '/css/kinetic.css' );
-
     wp_enqueue_style( 'pe-icon-social_css',
                       get_template_directory_uri() .
                       '/fonts/pe-icon-social/css/pe-icon-social.css' );
@@ -25,6 +21,10 @@
     wp_enqueue_style( 'helper_css',
                       get_template_directory_uri() .
                       '/fonts/pe-icon-social/css/helper.css' );
+
+    wp_enqueue_style( 'kinetic_css',
+                       get_template_directory_uri() .
+                       '/css/kinetic.css' );
   }
   add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
@@ -94,6 +94,44 @@
 
 // post-thumbnails //////////////////////////////////
   add_theme_support( 'post-thumbnails' );
+
+// Add Custom image sizes
+// Note: 'true' enables hard cropping so each image is exactly those dimensions and automatically cropped
+add_image_size( 'feature-image', 700, 420, true );
+add_image_size( 'medium-thumb', 300, 156, true );
+add_image_size( 'small-thumb', 75, 75, true );
+
+
+
+// multiple featured images //////////////////////////////////
+add_filter( 'kdmfi_featured_images', function( $featured_images ) {
+  $args_1 = array(
+    'id' => 'featured-image-1',
+    'desc' => 'Your description here.',
+    'label_name' => 'Featured Image 1',
+    'label_set' => 'Set featured image 1',
+    'label_remove' => 'Remove featured image 1',
+    'label_use' => 'Set featured image 1',
+    'post_type' => array( 'project' ),
+  );
+
+  $args_2 = array(
+    'id' => 'featured-image-2',
+    'desc' => 'Your description here.',
+    'label_name' => 'Featured Image 2',
+    'label_set' => 'Set featured image 2',
+    'label_remove' => 'Remove featured image 2',
+    'label_use' => 'Set featured image 2',
+    'post_type' => array( 'project' ),
+  );
+
+  // Add the featured images to the array, so that you are not overwriting images that maybe are created in other filter calls
+  $featured_images[] = $args_1;
+  $featured_images[] = $args_2;
+
+  // Important! Return all featured images
+  return $featured_images;
+});
 
 
 
