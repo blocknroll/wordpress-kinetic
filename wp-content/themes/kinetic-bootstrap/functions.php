@@ -106,22 +106,20 @@ add_image_size( 'small-thumb', 75, 75, true );
 // multiple featured images //////////////////////////////////
 add_filter( 'kdmfi_featured_images', function( $featured_images ) {
   $args_1 = array(
-    'id' => 'featured-image-1',
-    'desc' => 'Your description here.',
-    'label_name' => 'Featured Image 1',
-    'label_set' => 'Set featured image 1',
-    'label_remove' => 'Remove featured image 1',
-    'label_use' => 'Set featured image 1',
+    'id' => 'before-image',
+    'label_name' => 'Before Image',
+    'label_set' => 'Set Before Image',
+    'label_remove' => 'Remove Before Image',
+    'label_use' => 'Set Before Image',
     'post_type' => array( 'project' ),
   );
 
   $args_2 = array(
-    'id' => 'featured-image-2',
-    'desc' => 'Your description here.',
-    'label_name' => 'Featured Image 2',
-    'label_set' => 'Set featured image 2',
-    'label_remove' => 'Remove featured image 2',
-    'label_use' => 'Set featured image 2',
+    'id' => 'after-image',
+    'label_name' => 'After Image',
+    'label_set' => 'Set After Image',
+    'label_remove' => 'Remove After Image',
+    'label_use' => 'Set After Image',
     'post_type' => array( 'project' ),
   );
 
