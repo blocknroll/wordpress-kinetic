@@ -18,9 +18,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, footer  {
 }
 
 p, ul, li, a, footer  {
-  /* font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif; */
   font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
-  /* font-weight: 300; */
+}
+
+a,
+a:visited,
+a:active  {
+  color: rgba(51, 51, 51, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(149, 173, 210, 1);
+  text-decoration: none;
 }
 
 h1  {
@@ -50,6 +60,22 @@ h2  {
     -1px 1px 0px rgba(149, 173, 210, 1),
     -2px 2px 0px rgba(149, 173, 210, 1);
   text-align: center;
+}
+
+h2 > a {
+  color: rgba(52, 103, 157, 1);
+  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  text-shadow:
+    -1px 1px 0px rgba(149, 173, 210, 1),
+    -2px 2px 0px rgba(149, 173, 210, 1);
+}
+
+h2 > a:hover  {
+  color: rgba(149, 173, 210, 1);
+  text-shadow:
+    -1px 1px 0px rgba(52, 103, 157, 1),
+    -2px 2px 0px rgba(52, 103, 157, 1);
 }
 
 .emergency {
@@ -311,7 +337,7 @@ nav a:visited {
   padding: 0 0 7px 0;
 }
 
-a,
+/* a,
 a:visited,
 a:active  {
   color: rgba(51, 51, 51, 1);
@@ -321,7 +347,7 @@ a:active  {
 a:hover {
   color: rgba(149, 173, 210, 1);
   text-decoration: none;
-}
+} */
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
@@ -399,7 +425,7 @@ a:hover {
 /* Carousel base class */
 .carousel {
   max-width: 100%;
-  /* margin-top: 160px; */
+  margin-top: 160px;
   margin: 40px auto 0 auto;
 }
 
@@ -761,8 +787,6 @@ a:hover {
   max-width: 200px;
 }
 
-
-
 .box_lightBlue  {
   background-color: rgba(149, 173, 210, 1);
   max-width: 100%;
@@ -786,13 +810,10 @@ a:hover {
   text-transform: uppercase;
 }
 
-
 .box_lightBlue hr   {
   margin: 20px auto 20px auto;
   max-width: 200px;
 }
-
-
 
 .box_medBlue  {
   background-color: rgba(52, 103, 157, 1);
@@ -829,7 +850,6 @@ a:hover {
   margin: 20px auto 20px auto;
   max-width: 200px;
 }
-
 
 .dl-horizontal dt {
   clear: left;
@@ -869,6 +889,7 @@ a:hover {
 .projectTitle {
   padding: 20px 0 10px 0;
 }
+
 .projectTitle a  {
   color: rgba(149, 173, 210, 1);
   font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
@@ -907,6 +928,76 @@ a:hover {
 .projects p {
   margin: 10px 0 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  BLOG  ===========================================================   */
+
+.post  {
+  margin: 40px 0 40px 0;
+}
+.post h2,
+.post h2 > a {
+  color: rgba(52, 103, 157, 1);
+  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  padding: 0px 30px 20px 30px;
+  text-shadow:
+    -1px 1px 0px rgba(149, 173, 210, 1),
+    -2px 2px 0px rgba(149, 173, 210, 1);
+}
+
+.post h2 > a:hover  {
+  color: rgba(149, 173, 210, 1);
+  text-shadow:
+    -1px 1px 0px rgba(52, 103, 157, 1),
+    -2px 2px 0px rgba(52, 103, 157, 1);
+}
+
+.post p  {
+  color: rgba(51, 51, 51, 1);
+  font-size: 1.5em;
+  max-width: 100%;
+  /* max-width: 700px; */
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+.postBody p  {
+  text-align: justify;
+}
+
+.widget {
+  color: #999;
+  margin: 10px 0 40px;
+  text-align: left;
+}
+
+.widget ul  {
+  font-size: 1.2em;
+  padding: 0 0 0 18px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -1300,6 +1391,12 @@ footer address  {
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
     background-color: rgba(52, 103, 157, 1);
     color: rgba(255, 255, 255, 1);
+  }
+
+  .col-md-10  {
+    padding: 50px 100px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
   }
 
 }

@@ -1,45 +1,46 @@
 <?php get_header(); ?>
 
-  <div class="container">
+  <div class="container blog">
     <div class="row">
 
-      <div class="col-md-9">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <div class="col-md-12">
 
-          <div class="page-header">
+        <article class="post">
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <!-- image -->
-            <?php
-              $thumbnail_id   = get_post_thumbnail_id();
-              $thumbnail_url  = wp_get_attachment_image_src( $thumbnail_id,
-                                                            'thumbnail-size',
-                                                             true );
-              $thumbnail_meta = get_post_meta( $thumbnail_id,
-                                               '_wp_attachment_image_alt',
-                                               true );
-            ?>
-            <!-- image src + image tag + alt -->
-            <p class="featured-image">
-              <img src="<?php echo $thumbnail_url[0]; ?>"
-                   alt="<?php echo $thumbnail_meta; ?>">
-            </p>
+            <div class="page-header">
 
-            <h1><?php the_title(); ?></h1>
-            <p><em>
-              By <?php the_author(); ?>
-              on <?php echo the_time('l, F jS, Y'); ?>
-              in <?php the_category( ', '); ?>.
-              <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
-            </em></p>
-          </div>
+              <!-- image -->
+              <?php
+                $thumbnail_id   = get_post_thumbnail_id();
+                $thumbnail_url  = wp_get_attachment_image_src( $thumbnail_id,
+                                                              'thumbnail-size',
+                                                               true );
+                $thumbnail_meta = get_post_meta( $thumbnail_id,
+                                                 '_wp_attachment_image_alt',
+                                                 true );
+              ?>
+              <!-- image src + image tag + alt -->
+              <p class="featured-image">
+                <img src="<?php echo $thumbnail_url[0]; ?>"
+                     alt="<?php echo $thumbnail_meta; ?>">
+              </p>
 
-          <?php the_content(); ?>
+              <h1><?php the_title(); ?></h1>
+              <p><em>
+                By <?php the_author(); ?>
+                on <?php echo the_time('l, F jS, Y'); ?>
+                in <?php the_category( ', '); ?>.
+                <!-- <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a> -->
+              </em></p>
+            </div>
+            <div class="postBody">
+              <?php the_content(); ?>
+            </div>
 
-          <hr>
+          </article>
 
-          <?php comments_template(); ?>
-
-        <?php endwhile; else: ?>
+          <?php endwhile; else: ?>
 
 
           <!-- fake 404 page -->
@@ -52,8 +53,8 @@
 
       </div>
 
-      <?php get_sidebar( 'blog' ); ?>
 
     </div>
+  </div>
 
 <?php get_footer(); ?>
