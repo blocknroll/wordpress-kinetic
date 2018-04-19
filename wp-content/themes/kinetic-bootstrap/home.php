@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-  <div class="container">
+  <div class="container blog">
     <div class="row">
 
-      <div class="col-md-9">
+      <div class="col-md-12">
 
         <!-- puts the page title at the top ("Blog") -->
         <div class="page-header">
@@ -22,7 +22,7 @@
 
 
         <!-- Carousel -->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div class="carousel slide carousel-fade" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <?php
@@ -92,7 +92,6 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-
         <!-- End Carousel -->
 
 
@@ -107,9 +106,11 @@
               By <?php the_author(); ?>
               on <?php echo the_time('l, F jS, Y'); ?>
               in <?php the_category( ', '); ?>.
-              <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+              <!-- <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a> -->
             </em></p>
-            <?php the_excerpt(); ?>
+            <div class="postBody">
+              <?php the_excerpt(); ?>
+            </div>
             <hr>
           </article>
 
@@ -126,9 +127,24 @@
 
       </div>
 
-
-      <?php get_sidebar( 'blog' ); ?>
-
     </div>
+
+
+    <!-- Widget columns -->
+    <div class="row widget">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
 
 <?php get_footer(); ?>
