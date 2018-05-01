@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <link rel="icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico">
-
     <title>
       <?php bloginfo( 'name' ); ?>
       <?php wp_title( '|', true, 'left' ); ?>
