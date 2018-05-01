@@ -9,9 +9,11 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-<!-- IMAGE ===================================================== -->
+<!-- CAROUSEL ===================================================== -->
 <div class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
 
     <div class="item active">
       <img src="
