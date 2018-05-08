@@ -1,0 +1,21 @@
+/* BUTTONS ////////////////////////////////////////////////////////////////// */
+
+.button {
+  margin: 10px 0 10px 0;
+}
+
+.button a:link  {
+  background-color: rgba(0, 0, 0, .2);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 1px 10px 3px 10px;
+}
+
+// .button a:hover {
+//   background-color: rgba(224, 84, 32, 1);
+// }
+
+.button a:visited {
+  color: rgba(255, 255, 255, 1);
+}

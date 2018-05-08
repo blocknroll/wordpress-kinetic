@@ -1,0 +1,232 @@
+/* MEDIA QUERIES //////////////////////////////////////////////////////////// */
+
+
+/* ~~~~~~~~~~~~~~~ max-width: 320x >  ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 320px) {
+
+	#intro p  {
+		font-size: 1.35em;
+	}
+
+  .copy  p  {
+    font-size: 1.35em;
+  }
+
+}
+
+
+
+/* ~~~~~~~~~~~~~~~ max-width: 480x >  ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 480px) {
+
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~ min-width: 768px +  ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: 768px) {
+
+  .container  {
+    width: 700px;
+    padding: 0 0 0 0;
+  }
+
+  nav {
+    font-size: 1.2em;
+    width: 50%;
+    padding: .8em 0 1.3em 0;
+  }
+
+  .navbar-header img  {
+    height: 120px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-top: 30px;
+  }
+
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    background-color: rgba(149, 173, 210, 1);
+    color: rgba(51, 51, 51, 1);
+    text-decoration: none;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus   {
+    color: rgba(51, 51, 51, 1);
+  }
+
+  .carousel {
+    max-width: 700px;
+  }
+
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 20px;
+  }
+
+  .carousel-caption h1 > a {
+    font-size: 1.2em;
+    text-shadow:
+    -1px 1px rgba(52, 103, 157, 1),
+    -2px 2px rgba(52, 103, 157, 1);
+  }
+
+  h1    {
+    font-size: 4em;
+    max-width: 700px;
+    padding: 0px 0px 30px 0px;
+  }
+
+  hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    /* border-color: #eee -moz-use-text-color -moz-use-text-color; */
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    max-width: 700px;
+  }
+
+  .dropCap {
+    font-size: 70px;
+    line-height: 41px;
+    padding: 4px 3px 0 0;
+  }
+
+  #intro   {
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 700px;
+    margin: 120px auto 0px auto;
+  }
+
+  #intro p  {
+    font-size: 1.8em;
+    padding: 0px 0px 40px 0px;
+  }
+
+  .text   {
+    max-width: 700px;
+    margin: 0px auto 0px auto;
+  }
+
+  .text p  {
+    font-size: 1.8em;
+    padding: 0px 0px 40px 0px;
+  }
+
+  .overview  {
+    max-width: 700px;
+    margin: 0px auto 30px auto;
+
+  }
+
+  .watermark_responsive   {
+    max-width: 700px;
+  }
+
+  .watermark_responsive p  {
+    font-size: 1.8em;
+    padding: 0px 0px 40px 0px;
+  }
+
+  .dl-horizontal  {
+    margin: 0px auto 0px auto;
+    max-width: 700px;
+  }
+
+  .box_medBlue p  {
+    font-size: 1.8em;
+    max-width: 700px;
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 40px 0px;
+  }
+
+  .box_white p  {
+    font-size: 1.8em;
+    max-width: 700px;
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 40px 0px;
+  }
+
+  .box_white h2  {
+    font-size: 2.0em;
+  }
+
+  .box_white  ul  {
+    font-size: 1.8em;
+    margin: 0px auto 0px auto;
+    max-width: 700px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~ max-width: 700px +  ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 700px)  {
+
+  .box-before-after  {
+    margin: 30px;
+    max-width: 100%;
+  }
+
+  .box-photo-caption  {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .before  {
+    margin-right: 10px;
+  }
+
+  .dropdown-menu {
+    text-align: center;
+  }
+
+  .navbar-nav>li>a {
+    padding: 5px 0;
+  }
+
+  .navbar-nav .open .dropdown-menu>li>a {
+    line-height: 1.4;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+    background-color: rgba(52, 103, 157, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .col-md-10  {
+    padding: 50px 100px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+  }
+
+}

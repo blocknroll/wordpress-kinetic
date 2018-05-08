@@ -1,0 +1,50 @@
+/* PROJECTS ///////////////////////////////////////////////////////////////// */
+
+.page-header {
+  border: none;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+
+.projectTitle {
+  padding: 20px 0 10px 0;
+}
+
+.projectTitle a  {
+  color: rgba(149, 173, 210, 1);
+  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  text-shadow:
+    -1px 1px 0px rgba(52, 103, 157, 1),
+    -2px 2px 0px rgba(52, 103, 157, 1);
+}
+
+.projectTitle a:hover  {
+  color: rgba(52, 103, 157, 1);
+  text-shadow:
+    -1px 1px 0px rgba(149, 173, 210, 1),
+    -2px 2px 0px rgba(149, 173, 210, 1);
+}
+
+.box-before-after  {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.box-photo-caption  {
+  display: inline-block;
+  max-width: 49%;
+}
+
+.before  {
+  margin-right: 10px;
+}
+
+.row .beforeAfter {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.projects p {
+  margin: 10px 0 10px;
+}

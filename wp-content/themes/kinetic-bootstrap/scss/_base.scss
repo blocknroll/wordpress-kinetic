@@ -1,0 +1,320 @@
+/* BASE ///////////////////////////////////////////////////////////////////// */
+
+body    {
+  background-color: rgba(255, 255, 255, 1);
+  line-height: 1.2;
+  margin: 0;
+  padding: 120px 0 0 0;
+  text-align: center;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eee -moz-use-text-color -moz-use-text-color;
+  border-image: none;
+  border-right: 0 none;
+  border-style: solid none none;
+  border-width: 1px 0 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: rgba(255, 255, 255, .7);
+}
+
+.hrSpacer {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eee -moz-use-text-color -moz-use-text-color;
+  border-image: none;
+  border-right: 0 none;
+  border-style: solid none none;
+  border-width: 0px 0 0;
+  margin-bottom: 160px;
+  background-color: rgba(255, 255, 255, .7);
+}
+
+.anchor {
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+
+// CONTENTS ///////////////////////////////////////////////////////////////////
+.page-title {
+    padding-bottom: 0;
+    margin: 30px 0 0;
+    border-bottom: 0;
+}
+
+.watermark_responsive {
+  height: auto;
+  background: url(../img/kinetic-shield-18-watermark.svg);
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: center;
+  margin: 0px auto 0px auto;
+  padding-top: 40px;
+  display: block;
+}
+
+.watermark_responsive p  {
+  font-size: 1.5em;
+  color: rgba(51, 51, 51, 1);
+  padding: 0px 30px 40px 30px;
+  margin: 0px auto 0px auto;
+  text-align: justify;
+}
+
+.watermark_responsive h1  {
+  padding: 0px 30px 60px 30px;
+}
+
+.watermark_responsive  h2  {
+  color: rgba(51, 51, 51, 1);
+  font-size: 1.9em;
+  letter-spacing: 0.04em;
+  line-height: 1.2em;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 30px 60px 30px;
+  text-transform: uppercase;
+}
+
+.watermark {
+  height: auto;
+  background: url(../img/kinetic-shield-18-watermark.svg);
+  background-repeat: no-repeat;
+  background-size: 200px auto;
+  background-position: center;
+  margin: 0px auto 0px auto;
+  display: block;
+}
+
+.watermarkBox  {
+  position: relative;
+  max-width: 100%;
+  height: 180px;
+}
+
+.slogan_watermark {
+  opacity: .5;
+  padding: 40px 20px 40px 20px;
+}
+
+.slogan_watermark  img {
+  height: 100px;
+}
+
+.watermarkBox  h1 {
+  font-size: 3.0em;
+  color: rgba(52, 103, 157, 1);
+  text-shadow:
+    -1px 1px 0px rgba(149, 173, 210, 1),
+    -2px 2px 0px rgba(149, 173, 210, 1);
+  position: absolute;
+  top: 37%;
+  left: 1%;
+  right: 1%;
+}
+
+.intro   {
+  background-color: rgba(255, 255, 255, 1);
+  /* margin: 120px auto 0px auto; */
+  max-width: 100%;
+}
+
+.intro p {
+  color: rgba(51, 51, 51, 1);
+  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0px auto 0px auto;
+  padding: 0px 30px 40px 30px;
+  text-align: justify;
+}
+
+
+// ABOUT //////////////////////////////////////////////////////////////////////
+#about ul  {
+  list-style: square inside none;
+  font-size: 1.4em;
+  line-height: 1.1;
+  text-align: left;
+  padding: 0px 10px 60px 20px;
+  margin: 0px auto 0px auto;
+}
+
+.box_white  {
+  background-color: rgba(255, 255, 255, 1);
+  max-width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 30px 40px 30px;
+}
+
+.watermark img  {
+  width: 200px;
+  height: auto;
+  padding: 20px 0 0 0;
+  opacity: .5;
+}
+
+
+.box_white  h1  {
+  color: rgba(52, 103, 157, 1);
+  text-shadow:
+    -1px 1px 0px rgba(149, 173, 210, 1),
+    -2px 2px 0px rgba(149, 173, 210, 1);
+  margin: 0px auto 0px auto;
+  padding: 20px 0px 20px 0px;
+  top: 40px;
+  right: 1%;
+  left: 1%;
+}
+
+.box_white  h2  {
+  color: rgba(52, 103, 157, 1);
+  font-size: 1.9em;
+  letter-spacing: 0.04em;
+  line-height: 1.2em;
+  margin: 0px 0px 0px 0px;
+  padding: 20px 0px 20px 0px;
+  text-transform: uppercase;
+}
+
+.box_white  p  {
+  font-size: 1.5em;
+  margin: 0px 0px 20px 0px;
+  text-align: justify;
+}
+
+.box_white  ul  {
+  font-size: 1.5em;
+  list-style: square inside none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 20px;
+  text-align: left;
+}
+
+.box_white  li  {
+  margin: 0 0 20px 0;
+}
+
+.box_white hr   {
+  margin: 20px auto 0px auto;
+  max-width: 200px;
+}
+
+/* .box_lightBlue  {
+  background-color: rgba(149, 173, 210, 1);
+  max-width: 100%;
+  margin: 40px 0px 0px 0px;
+  padding: 60px 30px 60px 30px;
+}
+
+.box_lightBlue  h1  {
+  color: rgba(52, 103, 157, 1);
+  text-shadow: -1px 1px 0px rgba(149, 173, 210, 1), -2px 2px 0px rgba(0, 48, 83, .3);
+  padding: 0px 0px 10px 0px;
+}
+
+.box_lightBlue  h2  {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.9em;
+  letter-spacing: 0.04em;
+  line-height: 1.2em;
+  margin: 0px 0px 0px 0px;
+  text-shadow: -1px 1px 0px rgba(149, 173, 210, 1), -2px 2px 0px rgba(0, 48, 83, .3);
+  text-transform: uppercase;
+}
+
+.box_lightBlue hr   {
+  margin: 20px auto 20px auto;
+  max-width: 200px;
+}
+
+.box_medBlue  {
+  background-color: rgba(52, 103, 157, 1);
+  max-width: 100%;
+  margin: 0px 0px 60px 0px;
+  padding: 60px 30px 60px 30px;
+}
+
+.box_medBlue  h1  {
+  color: rgba(0, 48, 83, 1);
+  text-shadow: -1px 1px 0px rgba(52, 103, 157, 1), -2px 2px 0px rgba(149, 173, 210, 1);
+  padding: 0px 0px 40px 0px;
+}
+
+.box_medBlue  h2  {
+  color: rgba(149, 173, 210, 1);
+  font-size: 1.9em;
+  letter-spacing: 0.04em;
+  line-height: 1.2em;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 5px 0px;
+  text-shadow: -1px 1px 0px rgba(52, 103, 157, 1), -2px 2px 0px rgba(0, 48, 83, 1);
+  text-transform: uppercase;
+}
+
+.box_medBlue  p  {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5em;
+  padding: 0px 0px 40px 0px;
+  text-align: left;
+}
+
+.box_medBlue hr   {
+  margin: 20px auto 20px auto;
+  max-width: 200px;
+} */
+
+.dl-horizontal dt {
+  clear: left;
+  float: left;
+  font-weight: normal;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 250px;
+}
+
+.dl-horizontal dd {
+  margin-left: 180px;
+}
+
+
+
+// CONTACT ////////////////////////////////////////////////////////////////////
+address {
+  font-size: 1.4em;
+  line-height: 1.4;
+  margin: 20px 0px 40px 0px;
+}
+
+address strong  {
+  color: rgba(51, 51, 51, 1);
+  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+address .title  {
+  color: rgba(149, 173, 210, 1);
+  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+address h1  {
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  padding: 20px 0 10px 0;
+}

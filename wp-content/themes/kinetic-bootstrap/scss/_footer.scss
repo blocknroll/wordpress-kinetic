@@ -1,0 +1,74 @@
+/* FOOOTER ////////////////////////////////////////////////////////////////// */
+
+footer  {
+  background-color: rgba(51, 51, 51, 1);
+  padding: 60px 0px 60px 0px;
+  line-height: 1.7;
+}
+
+footer h1  {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 3.0em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 1);
+  padding: 40px 0px 40px 0px;
+  margin: 0px auto 0px auto;
+}
+
+/* footer h2  {
+  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: rgba(40, 27, 13, 1);
+  padding: 40px 30px 20px 30px;
+  margin: 0px auto 0px auto;
+} */
+
+footer p > a  {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+  padding: 10px 10px 40px 10px;
+  margin: 0px auto 0px auto;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  max-width: 100%;
+  height: auto;
+  text-shadow: -1px 1px 0px rgba(51, 51, 51, 1), -2px 2px 0px rgba(52, 103, 157, 1);
+}
+
+footer a:link  {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  padding: 3px 10px 3px 10px;
+}
+
+footer a:hover  {
+  color: rgba(149, 173, 210, 1);
+}
+
+footer address  {
+  margin: 20px auto 0px auto;
+}
+
+#bbb  {
+  margin: 30px auto 0px auto;
+  opacity: .1;
+}
+
+#iicrc  {
+  margin: 30px auto 0px auto;
+  opacity: .1;
+}
+
+.checkers {
+  background-color: rgba(51, 51, 51, 1);
+}
+
+.checkers_bg {
+  height: 20px;
+  background-image: url(../img/checkers.svg);
+  background-size: contain;
+  opacity: .1;
+}
