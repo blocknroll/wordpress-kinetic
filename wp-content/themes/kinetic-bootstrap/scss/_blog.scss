@@ -5,27 +5,26 @@
 }
 .post h2,
 .post h2 > a {
-  color: rgba(52, 103, 157, 1);
+  color: $color-blue;
   font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
   font-size: 1.8em;
   padding: 0px 30px 20px 30px;
   text-shadow:
-    -1px 1px 0px rgba(149, 173, 210, 1),
-    -2px 2px 0px rgba(149, 173, 210, 1);
+    -1px 1px 0px $color-blue-light,
+    -2px 2px 0px $color-blue-light;
 }
 
 .post h2 > a:hover  {
-  color: rgba(149, 173, 210, 1);
+  color: $color-blue-light;
   text-shadow:
-    -1px 1px 0px rgba(52, 103, 157, 1),
-    -2px 2px 0px rgba(52, 103, 157, 1);
+    -1px 1px 0px $color-blue,
+    -2px 2px 0px $color-blue;
 }
 
 .post p  {
-  color: rgba(51, 51, 51, 1);
+  color: $color-gray-80;
   font-size: 1.5em;
   max-width: 100%;
-  /* max-width: 700px; */
   margin: 0px auto 0px auto;
   padding: 0px 0px 20px 0px;
   text-align: center;
@@ -36,8 +35,7 @@
 }
 
 .widget {
-  /* color: #999; */
-  color: rgba(0, 0, 0, .4);
+  color: $color-gray-40;
   margin: 10px 0 40px;
   text-align: left;
 }

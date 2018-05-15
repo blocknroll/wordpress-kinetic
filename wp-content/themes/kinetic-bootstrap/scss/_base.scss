@@ -1,7 +1,7 @@
 /* BASE ///////////////////////////////////////////////////////////////////// */
 
 body    {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $color-white;
   line-height: 1.2;
   margin: 0;
   padding: 120px 0 0 0;
@@ -15,14 +15,13 @@ hr {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
-  border-color: #eee -moz-use-text-color -moz-use-text-color;
   border-image: none;
   border-right: 0 none;
   border-style: solid none none;
   border-width: 1px 0 0;
   margin-bottom: 0px;
   margin-top: 0px;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: $color-gray-30;
 }
 
 .hrSpacer {
@@ -30,13 +29,12 @@ hr {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
-  border-color: #eee -moz-use-text-color -moz-use-text-color;
   border-image: none;
   border-right: 0 none;
   border-style: solid none none;
   border-width: 0px 0 0;
   margin-bottom: 160px;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: $color-gray-30;
 }
 
 .anchor {
@@ -65,7 +63,7 @@ hr {
 
 .watermark_responsive p  {
   font-size: 1.5em;
-  color: rgba(51, 51, 51, 1);
+  color: $color-gray-80;
   padding: 0px 30px 40px 30px;
   margin: 0px auto 0px auto;
   text-align: justify;
@@ -76,7 +74,7 @@ hr {
 }
 
 .watermark_responsive  h2  {
-  color: rgba(51, 51, 51, 1);
+  color: $color-gray-80;
   font-size: 1.9em;
   letter-spacing: 0.04em;
   line-height: 1.2em;
@@ -112,10 +110,10 @@ hr {
 
 .watermarkBox  h1 {
   font-size: 3.0em;
-  color: rgba(52, 103, 157, 1);
+  color: $color-blue;
   text-shadow:
-    -1px 1px 0px rgba(149, 173, 210, 1),
-    -2px 2px 0px rgba(149, 173, 210, 1);
+    -1px 1px 0px $color-blue-light,
+    -2px 2px 0px $color-blue-light;
   position: absolute;
   top: 37%;
   left: 1%;
@@ -123,13 +121,12 @@ hr {
 }
 
 .intro   {
-  background-color: rgba(255, 255, 255, 1);
-  /* margin: 120px auto 0px auto; */
+  background-color: $color-white;
   max-width: 100%;
 }
 
 .intro p {
-  color: rgba(51, 51, 51, 1);
+  color: $color-gray-80;
   font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: 300;
@@ -150,7 +147,7 @@ hr {
 }
 
 .box_white  {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $color-white;
   max-width: 100%;
   margin: 0px 0px 0px 0px;
   padding: 0px 30px 40px 30px;
@@ -165,10 +162,10 @@ hr {
 
 
 .box_white  h1  {
-  color: rgba(52, 103, 157, 1);
+  color: $color-blue;
   text-shadow:
-    -1px 1px 0px rgba(149, 173, 210, 1),
-    -2px 2px 0px rgba(149, 173, 210, 1);
+    -1px 1px 0px $color-blue-light,
+    -2px 2px 0px $color-blue-light;
   margin: 0px auto 0px auto;
   padding: 20px 0px 20px 0px;
   top: 40px;
@@ -177,7 +174,7 @@ hr {
 }
 
 .box_white  h2  {
-  color: rgba(52, 103, 157, 1);
+  color: $color-blue;
   font-size: 1.9em;
   letter-spacing: 0.04em;
   line-height: 1.2em;
@@ -209,70 +206,6 @@ hr {
   max-width: 200px;
 }
 
-/* .box_lightBlue  {
-  background-color: rgba(149, 173, 210, 1);
-  max-width: 100%;
-  margin: 40px 0px 0px 0px;
-  padding: 60px 30px 60px 30px;
-}
-
-.box_lightBlue  h1  {
-  color: rgba(52, 103, 157, 1);
-  text-shadow: -1px 1px 0px rgba(149, 173, 210, 1), -2px 2px 0px rgba(0, 48, 83, .3);
-  padding: 0px 0px 10px 0px;
-}
-
-.box_lightBlue  h2  {
-  color: rgba(255, 255, 255, 1);
-  font-size: 1.9em;
-  letter-spacing: 0.04em;
-  line-height: 1.2em;
-  margin: 0px 0px 0px 0px;
-  text-shadow: -1px 1px 0px rgba(149, 173, 210, 1), -2px 2px 0px rgba(0, 48, 83, .3);
-  text-transform: uppercase;
-}
-
-.box_lightBlue hr   {
-  margin: 20px auto 20px auto;
-  max-width: 200px;
-}
-
-.box_medBlue  {
-  background-color: rgba(52, 103, 157, 1);
-  max-width: 100%;
-  margin: 0px 0px 60px 0px;
-  padding: 60px 30px 60px 30px;
-}
-
-.box_medBlue  h1  {
-  color: rgba(0, 48, 83, 1);
-  text-shadow: -1px 1px 0px rgba(52, 103, 157, 1), -2px 2px 0px rgba(149, 173, 210, 1);
-  padding: 0px 0px 40px 0px;
-}
-
-.box_medBlue  h2  {
-  color: rgba(149, 173, 210, 1);
-  font-size: 1.9em;
-  letter-spacing: 0.04em;
-  line-height: 1.2em;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 5px 0px;
-  text-shadow: -1px 1px 0px rgba(52, 103, 157, 1), -2px 2px 0px rgba(0, 48, 83, 1);
-  text-transform: uppercase;
-}
-
-.box_medBlue  p  {
-  color: rgba(255, 255, 255, 1);
-  font-size: 1.5em;
-  padding: 0px 0px 40px 0px;
-  text-align: left;
-}
-
-.box_medBlue hr   {
-  margin: 20px auto 20px auto;
-  max-width: 200px;
-} */
-
 .dl-horizontal dt {
   clear: left;
   float: left;
@@ -287,7 +220,6 @@ hr {
 .dl-horizontal dd {
   margin-left: 180px;
 }
-
 
 
 // CONTACT ////////////////////////////////////////////////////////////////////
@@ -306,7 +238,7 @@ address strong  {
 }
 
 address .title  {
-  color: rgba(149, 173, 210, 1);
+  color: $color-blue-light;
   font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   letter-spacing: 0.02em;

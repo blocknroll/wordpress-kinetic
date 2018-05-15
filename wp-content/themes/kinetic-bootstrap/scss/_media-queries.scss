@@ -52,15 +52,22 @@
 
   .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
-    background-color: rgba(149, 173, 210, 1);
-    color: rgba(51, 51, 51, 1);
+    background-color: $color-blue-light;
+    color: $color-gray-80;
     text-decoration: none;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus   {
-    color: rgba(51, 51, 51, 1);
+    color: $color-gray-80;
   }
+
+  // .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+  // .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
+  // .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+  //   background-color: $color-blue-light;
+  //   color: $color-white;
+  // }
 
   .carousel {
     max-width: 700px;
@@ -80,8 +87,8 @@
   .carousel-caption h1 > a {
     font-size: 1.2em;
     text-shadow:
-    -1px 1px rgba(52, 103, 157, 1),
-    -2px 2px rgba(52, 103, 157, 1);
+    -1px 1px $color-blue,
+    -2px 2px $color-blue;
   }
 
   h1    {
@@ -95,7 +102,6 @@
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    /* border-color: #eee -moz-use-text-color -moz-use-text-color; */
     border-image: none;
     border-right: 0 none;
     border-style: solid none none;
@@ -112,7 +118,7 @@
   }
 
   #intro   {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: $color-white;
     max-width: 700px;
     margin: 120px auto 0px auto;
   }
@@ -216,17 +222,15 @@
     line-height: 1.4;
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
-  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
-    background-color: rgba(52, 103, 157, 1);
-    color: rgba(255, 255, 255, 1);
-  }
+  // .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+  // .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,
+  // .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+  //   background-color: $color-blue;
+  //   color: $color-white;
+  // }
 
   .col-md-10  {
     padding: 50px 100px;
-    /* margin: 0 auto; */
-    /* text-align: center; */
   }
 
 }

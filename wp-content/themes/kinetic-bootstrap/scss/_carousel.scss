@@ -13,7 +13,7 @@
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption  {
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
   position: absolute;
   right: 0%;
   bottom: -1%;
@@ -25,50 +25,50 @@
 
 .carousel-caption h1 {
   font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
   letter-spacing: 0.07em;
   padding: 0px 0px 0px 0px;
   text-shadow:
-    -1px 1px rgba(52, 103, 157, 1),
-    -2px 2px rgba(52, 103, 157, 1);
+    -1px 1px $color-blue,
+    -2px 2px $color-blue;
 }
 
 .carousel-caption h1 > a {
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
   font-family: 'SteelfishRgRegular','Open Sans Condensed',Arial,Helvetica,sans-serif;
   font-size: 9vw;
 }
 
 .carousel-caption h1 > a:hover  {
-  color: rgba(149, 173, 210, 1);
+  color: $color-blue-light;
 }
 
 .carousel-caption .btn {
   -moz-user-select: none;
-  background-color: rgba(255, 255, 255, .0);
+  background-color: $color-white-0;
   border: 1px solid transparent;
-  border-color: rgba(255, 255, 255, 1);
+  border-color: $color-white;
   border-radius: 4px;
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
   font-family: 'SteelfishRgRegular','Open Sans Condensed',Arial,Helvetica,sans-serif;
   font-size: 1.5em;
   letter-spacing: 0.05em;
   margin-top: 2px;
   padding: 1px 20px;
   text-shadow:
-    -1px 1px rgba(52, 103, 157, 1);
+    -1px 1px $color-blue;
 }
 
 .carousel-caption .btn:hover,
 .carousel-caption .btn:focus,
 .carousel-caption .btn:active  {
-  background-color: rgba(149, 173, 210, .5);
-  border-color: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: $color-blue-light-50;
+  border-color: $color-white;
+  color: $color-white;
 }
 
 .carousel .item {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $color-white;
 }
 
 .carousel-inner > .item > img {
@@ -90,7 +90,7 @@
 }
 
 .carousel-indicators li {
-  /* background-color: rgba(255, 255, 255, .3); */
+  background-color: $color-white-30;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -102,7 +102,7 @@
 }
 
 .carousel-indicators .active {
-    /* background-color: rgba(255, 255, 255, .7); */
+    background-color: $color-white-70;
     height: 12px;
     margin: 0;
     width: 12px;
@@ -110,13 +110,13 @@
 
 .carousel-control {
     bottom: 0;
-    /* color: rgba(255, 255, 255, .7); */
+    color: $color-white-70;
     font-size: 20px;
     left: 0;
     opacity: 0.5;
     position: absolute;
     text-align: center;
-    /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); */
+    text-shadow: 0 1px 2px $color-gray-80;
     top: 0;
     width: 10%;
 }
