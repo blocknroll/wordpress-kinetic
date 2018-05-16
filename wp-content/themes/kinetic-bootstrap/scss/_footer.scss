@@ -3,53 +3,31 @@
 footer  {
   background-color: $color-gray-80;
   padding: 60px 0px 60px 0px;
-  line-height: 1.7;
-}
-
-footer h1  {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: 3.0em;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  color: $color-white;
-  padding: 40px 0px 40px 0px;
-  margin: 0px auto 0px auto;
-}
-
-footer p > a  {
-  color: $color-white;
-  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
-  font-size: 1.7em;
-  padding: 10px 10px 40px 10px;
-  margin: 0px auto 0px auto;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  max-width: 100%;
-  height: auto;
-  text-shadow: -1px 1px 0px $color-gray-80,
-               -2px 2px 0px $color-blue;
-}
-
-footer a:link  {
-  color: $color-white;
-  text-decoration: none;
-  padding: 3px 10px 3px 10px;
-}
-
-footer a:hover  {
-  color: $color-blue-light;
 }
 
 footer address  {
   margin: 20px auto 0px auto;
 }
 
-#bbb  {
+footer h2 > a  {
+  text-shadow: -1px 1px 0px $color-gray-80,
+               -2px 2px 0px $color-blue;
+}
+
+footer a:link  {
+  color: $color-white;
+}
+
+footer a:hover  {
+  color: $color-blue-light;
+}
+
+.bbb  {
   margin: 30px auto 0px auto;
   opacity: .1;
 }
 
-#iicrc  {
+.iicrc  {
   margin: 30px auto 0px auto;
   opacity: .1;
 }

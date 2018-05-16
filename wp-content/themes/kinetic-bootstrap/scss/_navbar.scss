@@ -20,7 +20,6 @@ nav {
 
 nav a:link {
   color: $color-gray-40;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
   width: 33.333%;
   font-size: 1.1em;
@@ -28,12 +27,15 @@ nav a:link {
   text-decoration: none;
  }
 
+.navbar-default  {
+  text-transform: uppercase;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: $color-white;
-  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: $font-heading;
   font-size: 1.4em;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -88,11 +90,10 @@ nav a:link {
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: $color-white;
-  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: $font-heading;
   font-size: 1.3em;
   letter-spacing: 0.02em;
   padding: 1px 16px;
-  text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,

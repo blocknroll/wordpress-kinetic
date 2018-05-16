@@ -10,14 +10,13 @@
         </a>
 
         <address>
-          <p><a href="tel:+17202022202">720-202-2202</a></p>
-          <a href="mailto:email@rethinkrestoration.com">
-            email@rethinkrestoration.com
-          </a>
+          <h2><a href="tel:+17202022202">720-202-2202</a></h2>
+            <a href="mailto:email@rethinkrestoration.com">
+              email@rethinkrestoration.com
+            </a>
         </address>
 
         <div class="socialIcons">
-          <p>
             <a href="https://www.facebook.com/rethinkrestoration"
               target="_blank">
               <span class="pe-so-facebook pe-2x"></span>
@@ -25,10 +24,9 @@
             <a href="https://www.linkedin.com/company/kinetic-restoration"
               target="_blank"><span class="pe-so-linkedin pe-2x"></span>
             </a>
-          </p>
         </div>
 
-        <div id="bbb">
+        <div class="bbb">
           <a href="https://www.bbb.org/denver/business-reviews/construction-and-remodeling-services/kinetic-restoration-in-englewood-co-90169775#sealclick"
             target="_blank">
             <img src="
@@ -39,7 +37,7 @@
           </a>
         </div>
 
-        <div id="iicrc">
+        <div class="iicrc">
           <a href="img/IICRC_KINETIC_RESTORATION.pdf" target="_blank">
             <img src="
               <?php echo get_template_directory_uri();

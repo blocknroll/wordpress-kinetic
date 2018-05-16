@@ -11,13 +11,18 @@
          url('../fonts/steelfish_regular/steelfish_rg-webfont.svg#SteelfishRgRegular') format('svg');
 }
 
+$font-sans-serif : Arial, Helvetica, sans-serif;
+$font-heading    : 'SteelfishRgRegular', 'Open Sans Condensed', $font-sans-serif;
+$font-body       : 'Open Sans Condensed', $font-sans-serif;
 
-h1, h2, h3, h4, h5, h6, p, ul, li, a, footer  {
-  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+
+h1, h2, h3, h4, h5, h6, h1 > a  {
+  font-family: $font-heading;
+  text-transform: uppercase;
 }
 
 p, ul, li, a, footer  {
-  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: $font-body;
 }
 
 a,
@@ -35,7 +40,6 @@ a:hover {
 h1  {
   font-size: 3.0em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: $color-blue;
   padding: 0px 30px 40px 30px;
   margin: 0px auto 0px auto;
@@ -49,21 +53,20 @@ h1  {
 h2  {
   font-size: 1.5em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: $color-blue;
-  padding: 0px 30px 40px 30px;
+  padding: 0px 30px 20px 30px;
   margin: 0px auto 0px auto;
   max-width: 100%;
   height: auto;
+  text-align: center;
   text-shadow:
     -1px 1px 0px $color-blue-light,
     -2px 2px 0px $color-blue-light;
-  text-align: center;
 }
 
 h2 > a {
   color: $color-blue;
-  font-family: 'SteelfishRgRegular', 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: $font-heading;
   font-size: 1.5em;
   text-shadow:
     -1px 1px 0px $color-blue-light,
@@ -79,7 +82,6 @@ h2 > a:hover  {
 
 .emergency {
   margin: 10px auto 20px auto;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   text-shadow:
     -1px 1px 0px $color-blue,
@@ -107,7 +109,7 @@ h2 > a:hover  {
 .dropCap {
   color: $color-blue;
   float: left;
-  font-family: 'SteelfishRgRegular','Open Sans Condensed',Arial,Helvetica,sans-serif;
+  font-family: $font-heading;
   font-size: 60px;
   line-height: 32px;
   padding: 4px 3px 0 0;
@@ -140,4 +142,26 @@ h2 > a:hover  {
 
 .slogan {
   margin: 0 auto 60px auto;
+}
+
+address {
+  font-size: 1.4em;
+  line-height: 1.4;
+  margin: 20px 0px 40px 0px;
+}
+
+address strong  {
+  color: $color-gray-80;
+  font-family: $font-heading;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+address .title  {
+  color: $color-blue-light;
+  font-family: $font-heading;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
