@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6, h1 > a  {
 
 p, ul, li, a, footer  {
   font-family: $font-body;
+  font-weight: 300;
+}
+
+p {
+  color: $color-gray-80;
 }
 
 a,

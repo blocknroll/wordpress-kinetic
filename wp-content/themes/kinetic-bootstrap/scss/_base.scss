@@ -50,6 +50,22 @@ hr {
     border-bottom: 0;
 }
 
+.intro   {
+  max-width: 100%;
+}
+
+.intro p {
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 0 30px 40px;
+  text-align: justify;
+
+  @media #{$breakpoint-wide} {
+    font-size: 1.8em;
+    padding: 0 0 40px;
+  }
+}
+
 .watermark_responsive {
   height: auto;
   background: url(../img/kinetic-shield-18-watermark.svg);
@@ -62,11 +78,11 @@ hr {
 }
 
 .watermark_responsive p  {
-  font-size: 1.5em;
-  color: $color-gray-80;
-  padding: 0px 30px 40px 30px;
-  margin: 0px auto 0px auto;
-  text-align: justify;
+  // font-size: 1.5em;
+  // color: $color-gray-80;
+  // padding: 0px 30px 40px 30px;
+  // margin: 0px auto 0px auto;
+  // text-align: justify;
 }
 
 .watermark_responsive h1  {
@@ -120,19 +136,7 @@ hr {
   right: 1%;
 }
 
-.intro   {
-  background-color: $color-white;
-  max-width: 100%;
-}
 
-.intro p {
-  color: $color-gray-80;
-  font-size: 1.5em;
-  font-weight: 300;
-  margin: 0px auto 0px auto;
-  padding: 0px 30px 40px 30px;
-  text-align: justify;
-}
 
 
 // ABOUT //////////////////////////////////////////////////////////////////////

@@ -10,7 +10,11 @@ h1, h2, h3, h4, h5, h6, h1 > a {
   text-transform: uppercase; }
 
 p, ul, li, a, footer {
-  font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 300; }
+
+p {
+  color: #333333; }
 
 a,
 a:visited,
@@ -166,6 +170,19 @@ hr {
   margin: 30px 0 0;
   border-bottom: 0; }
 
+.intro {
+  max-width: 100%; }
+
+.intro p {
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 0 30px 40px;
+  text-align: justify; }
+  @media (min-width: 769px) {
+    .intro p {
+      font-size: 1.8em;
+      padding: 0 0 40px; } }
+
 .watermark_responsive {
   height: auto;
   background: url(../img/kinetic-shield-18-watermark.svg);
@@ -175,13 +192,6 @@ hr {
   margin: 0px auto 0px auto;
   padding-top: 40px;
   display: block; }
-
-.watermark_responsive p {
-  font-size: 1.5em;
-  color: #333333;
-  padding: 0px 30px 40px 30px;
-  margin: 0px auto 0px auto;
-  text-align: justify; }
 
 .watermark_responsive h1 {
   padding: 0px 30px 60px 30px; }
@@ -224,18 +234,6 @@ hr {
   top: 37%;
   left: 1%;
   right: 1%; }
-
-.intro {
-  background-color: white;
-  max-width: 100%; }
-
-.intro p {
-  color: #333333;
-  font-size: 1.5em;
-  font-weight: 300;
-  margin: 0px auto 0px auto;
-  padding: 0px 30px 40px 30px;
-  text-align: justify; }
 
 #about ul {
   list-style: square inside none;
@@ -694,7 +692,6 @@ footer a:hover {
   background-size: contain;
   opacity: .1; }
 
-/* MEDIA QUERIES //////////////////////////////////////////////////////////// */
 /* ~~~~~~~~~~~~~~~ max-width: 320x >  ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 320px) {
   #intro p {
@@ -794,10 +791,6 @@ footer a:hover {
 
   .watermark_responsive {
     max-width: 700px; }
-
-  .watermark_responsive p {
-    font-size: 1.8em;
-    padding: 0px 0px 40px 0px; }
 
   .dl-horizontal {
     margin: 0px auto 0px auto;
