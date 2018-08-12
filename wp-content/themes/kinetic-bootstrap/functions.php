@@ -1,6 +1,6 @@
 <?php
 
-// CSS //////////////////////////////////
+  // CSS //////////////////////////////////
   function theme_styles() {
     wp_enqueue_style( 'bootstrap_css',
                        get_template_directory_uri() .
@@ -30,7 +30,7 @@
 
 
 
-// JS //////////////////////////////////
+  // JS //////////////////////////////////
   function theme_js() {
 
     global $wp_scripts;
@@ -59,7 +59,7 @@
 
 
 
-// Register Custom Navigation Walker /////////////////////////////
+  // Register Custom Navigation Walker /////////////////////////////
   require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
 
   register_nav_menus( array(
@@ -68,7 +68,7 @@
 
 
 
-// GOOGLE FONTS //////////////////////////////////
+  // GOOGLE FONTS //////////////////////////////////
 
   // Enqueue Google Fonts using a function
   function load_google_fonts() {
@@ -92,44 +92,46 @@
 
 
 
-// post-thumbnails //////////////////////////////////
+  // post-thumbnails //////////////////////////////////
   add_theme_support( 'post-thumbnails' );
 
-// Add Custom image sizes
-// Note: 'true' enables hard cropping so each image is exactly those dimensions and automatically cropped
-add_image_size( 'feature-image', 700, 420, true );
-add_image_size( 'medium-thumb', 300, 156, true );
-add_image_size( 'small-thumb', 75, 75, true );
+  // Add Custom image sizes
+  // Note: 'true' enables hard cropping so each image is exactly those
+  //       dimensions and automatically cropped
+  add_image_size( 'feature-image', 700, 420, true );
+  add_image_size( 'medium-thumb', 300, 156, true );
+  add_image_size( 'small-thumb', 75, 75, true );
 
 
 
-// multiple featured images //////////////////////////////////
-add_filter( 'kdmfi_featured_images', function( $featured_images ) {
-  $args_1 = array(
-    'id' => 'before-image',
-    'label_name' => 'Before Image',
-    'label_set' => 'Set Before Image',
-    'label_remove' => 'Remove Before Image',
-    'label_use' => 'Set Before Image',
-    'post_type' => array( 'project' ),
-  );
+  // multiple featured images //////////////////////////////////
+  add_filter( 'kdmfi_featured_images', function( $featured_images ) {
+    $args_1 = array(
+      'id' => 'before-image',
+      'label_name' => 'Before Image',
+      'label_set' => 'Set Before Image',
+      'label_remove' => 'Remove Before Image',
+      'label_use' => 'Set Before Image',
+      'post_type' => array( 'project' ),
+    );
 
-  $args_2 = array(
-    'id' => 'after-image',
-    'label_name' => 'After Image',
-    'label_set' => 'Set After Image',
-    'label_remove' => 'Remove After Image',
-    'label_use' => 'Set After Image',
-    'post_type' => array( 'project' ),
-  );
+    $args_2 = array(
+      'id' => 'after-image',
+      'label_name' => 'After Image',
+      'label_set' => 'Set After Image',
+      'label_remove' => 'Remove After Image',
+      'label_use' => 'Set After Image',
+      'post_type' => array( 'project' ),
+    );
 
-  // Add the featured images to the array, so that you are not overwriting images that maybe are created in other filter calls
-  $featured_images[] = $args_1;
-  $featured_images[] = $args_2;
+    // Add the featured images to the array, so that you are not overwriting
+    // images that maybe are created in other filter calls
+    $featured_images[] = $args_1;
+    $featured_images[] = $args_2;
 
-  // Important! Return all featured images
-  return $featured_images;
-});
+    // Important! Return all featured images
+    return $featured_images;
+  });
 
 
 
@@ -148,7 +150,7 @@ add_filter( 'kdmfi_featured_images', function( $featured_images ) {
 
 
 
-// Columns ///////////////////////////////////
+  // Columns ///////////////////////////////////
   create_widget( 'Front Page Left',
                  'front-left',
                  'Displays on the left of the homepage' );
@@ -161,7 +163,7 @@ add_filter( 'kdmfi_featured_images', function( $featured_images ) {
 
 
 
-// Sidebars //////////////////////////////////
+                 // Sidebars //////////////////////////////////
   create_widget( 'Page Sidebar',
                  'page',
                  'Displays on the side of pages with a sidebar' );
@@ -171,7 +173,7 @@ add_filter( 'kdmfi_featured_images', function( $featured_images ) {
 
 
 
-// Admin bar toggle /////////////////////////////
+  // Admin bar toggle /////////////////////////////
   add_filter( 'show_admin_bar', '__return_false' );
 
 ?>
