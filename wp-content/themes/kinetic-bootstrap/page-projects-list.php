@@ -19,8 +19,6 @@
             <h1><?php the_title(); ?></h1>
           </div>
 
-          <?php the_content(); ?>
-
         <!-- fake 404 page -->
         <?php endwhile; else: ?>
           <div class="page-header">
@@ -52,68 +50,58 @@
         ?>
 
 
-      <!-- project title row ---------------------------------------------->
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="projectTitle">
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-          </h2>
-        </div>
-      </div>
-
-
-      <!-- project overview ---------------------------------------------->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="overview">
-            <p>
-              <?php the_field('project_overview'); ?>
-            </p>
+        <!-- project title row ---------------------------------->
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="projectTitle">
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </h2>
           </div>
         </div>
-      </div>
 
 
-      <!-- project images row ---------------------------------------------->
-      <div class="row beforeAfter">
-
-        <!-- first-image ---------------------------------------------->
-        <div class="col-sm-6">
-          <a href="<?php the_permalink(); ?>">
-            <?php
-            $thumbnail_id = kdmfi_the_featured_image( 'featured-image-1', 'medium-thumb' );
-            ?>
-          </a>
-          <p>Before</p>
+        <!-- project overview ------------------------------------>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="overview">
+              <p>
+                <?php the_field('project_overview'); ?>
+              </p>
+            </div>
+          </div>
         </div>
 
-        <!-- secondary-image ---------------------------------------------->
-        <div class="col-sm-6">
-          <a href="<?php the_permalink(); ?>">
-            <?php
-            $thumbnail_id = kdmfi_the_featured_image( 'featured-image-2', 'medium-thumb' );
-            ?>
-          </a>
-          <p>After</p>
+
+        <!-- project images row ----------------------------------->
+        <div class="row beforeAfter">
+
+          <!-- first-image ---------------------------------------->
+          <div class="col-sm-6">
+            <a href="<?php the_permalink(); ?>">
+              <?php
+                $thumbnail_id = kdmfi_the_featured_image( 'before-image',
+                                                          'medium-thumb' );
+              ?>
+            </a>
+            <p>Before</p>
+          </div>
+          <!-- secondary-image ------------------------------------>
+          <div class="col-sm-6">
+            <a href="<?php the_permalink(); ?>">
+              <?php
+                $thumbnail_id = kdmfi_the_featured_image( 'after-image',
+                                                          'medium-thumb' );
+              ?>
+            </a>
+            <p>After</p>
+          </div>
+
         </div>
 
-      </div>
+        <?php endwhile; endif; ?>
 
-      <!-- automatically end the row after 1 item -->
-      <?php $project_count = $the_query->current_post + 1; ?>
-      <?php if ( $project_count % 1 == 0): ?>
-
-      </div>
-    </div>
-
-
-    <div class="row">
-      <?php endif; ?>
-
-      <?php endwhile; endif; ?>
-    </div>
-
-
+      </div> <!-- projects col-md-12 end -->
+    </div> <!-- projects row end -->
   </div> <!-- container end -->
 
 
