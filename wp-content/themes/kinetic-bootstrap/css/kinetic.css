@@ -126,6 +126,108 @@ address .title {
   letter-spacing: 0.02em;
   text-transform: uppercase; }
 
+@font-face {
+  font-family: 'Pe-icon-social';
+  src: url("../fonts/pe-icon-social/fonts/Pe-icon-social.eot");
+  src: url("../fonts/pe-icon-social/fonts/Pe-icon-social.eot") format("embedded-opentype"), url("../fonts/pe-icon-social/fonts/Pe-icon-social.woff") format("woff"), url("../fonts/pe-icon-social/fonts/Pe-icon-social.ttf") format("truetype"), url("../fonts/pe-icon-social/fonts/Pe-icon-social.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="pe-so-"], [class*=" pe-so-"] {
+  display: inline-block;
+  font-family: 'Pe-icon-social';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /*border: 1px solid #eaeaea;*/
+  background-color: white;
+  border-radius: 7px;
+  color: #1a1a1a;
+  display: inline-block;
+  font-size: 48px;
+  margin: 30px 8px 0px 8px;
+  padding: 10px 0;
+  /*transition: padding 150ms linear 0s, width 150ms linear 0s, font-size 150ms linear 0s;*/
+  width: 50px;
+  opacity: 0.1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.socialIcons p > a:link, a:visited {
+  color: #333333;
+  padding: 10px 0;
+  font-size: 1.0em;
+  text-shadow: none; }
+
+.pe-so-aim:before {
+  content: "\e600"; }
+
+.pe-so-amazon:before {
+  content: "\e601"; }
+
+.pe-so-behance:before {
+  content: "\e602"; }
+
+.pe-so-deviantart:before {
+  content: "\e603"; }
+
+.pe-so-dribbble:before {
+  content: "\e604"; }
+
+.pe-so-facebook:before {
+  content: "\e605"; }
+
+.pe-so-flickr:before {
+  content: "\e606"; }
+
+.pe-so-forrst:before {
+  content: "\e607"; }
+
+.pe-so-google-plus:before {
+  content: "\e608"; }
+
+.pe-so-lastfm:before {
+  content: "\e609"; }
+
+.pe-so-linkedin:before {
+  content: "\e60a"; }
+
+.pe-so-love:before {
+  content: "\e60b"; }
+
+.pe-so-picasa:before {
+  content: "\e60c"; }
+
+.pe-so-pininterest:before {
+  content: "\e60d"; }
+
+.pe-so-rss:before {
+  content: "\e60e"; }
+
+.pe-so-skype:before {
+  content: "\e60f"; }
+
+.pe-so-tumblr:before {
+  content: "\e610"; }
+
+.pe-so-twitter:before {
+  content: "\e611"; }
+
+.pe-so-vimeo:before {
+  content: "\e612"; }
+
+.pe-so-yahoo:before {
+  content: "\e613"; }
+
+.pe-so-yelp:before {
+  content: "\e614"; }
+
+.pe-so-youtube:before {
+  content: "\e615"; }
+
 /* BASE ///////////////////////////////////////////////////////////////////// */
 body {
   background-color: white;
@@ -839,5 +941,170 @@ footer a:hover {
 
   .col-md-10 {
     padding: 50px 100px; } }
+/* HELPER CLASS
+ * -------------------------- */
+/* FA based classes */
+/*! Modified from font-awesome helper CSS classes - PIXEDEN
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (CSS: MIT License)
+ */
+/* makes the font 33% larger relative to the icon container */
+.pe-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.pe-2x {
+  font-size: 2em; }
+
+.pe-3x {
+  font-size: 3em; }
+
+.pe-4x {
+  font-size: 4em; }
+
+.pe-5x {
+  font-size: 5em; }
+
+.pe-fw {
+  width: 1.2857142857142858em;
+  text-align: center; }
+
+.pe-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none; }
+
+.pe-ul > li {
+  position: relative; }
+
+.pe-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: 0.14285714285714285em;
+  text-align: center; }
+
+.pe-li.pe-lg {
+  left: -1.8571428571428572em; }
+
+.pe-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.pe.pull-left {
+  margin-right: .3em; }
+
+.pe.pull-right {
+  margin-left: .3em; }
+
+.pe-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear; }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(359deg); } }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg); } }
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg); }
+  100% {
+    -o-transform: rotate(359deg); } }
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg); }
+  100% {
+    -ms-transform: rotate(359deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+.pe-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.pe-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.pe-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.pe-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+.pe-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+.pe-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+.pe-stack-1x,
+.pe-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.pe-stack-1x {
+  line-height: inherit; }
+
+.pe-stack-2x {
+  font-size: 2em; }
+
+.pe-inverse {
+  color: #ffffff; }
+
+/* Custom classes / mods - PIXEDEN */
+.pe-va {
+  vertical-align: middle; }
+
+.pe-border {
+  border: solid 0.08em #eaeaea; }
 
 /*# sourceMappingURL=kinetic.css.map */
