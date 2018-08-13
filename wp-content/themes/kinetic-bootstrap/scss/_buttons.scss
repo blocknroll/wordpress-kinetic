@@ -1,0 +1,17 @@
+/* BUTTONS ////////////////////////////////////////////////////////////////// */
+
+.button {
+  margin: 10px 0 10px 0;
+}
+
+.button a:link  {
+  background-color: $color-gray-20;
+  color: $color-white;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 1px 10px 3px 10px;
+}
+
+.button a:visited {
+  color: $color-white;
+}

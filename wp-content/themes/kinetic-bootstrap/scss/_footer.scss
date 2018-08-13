@@ -1,0 +1,44 @@
+/* FOOOTER ////////////////////////////////////////////////////////////////// */
+
+footer  {
+  background-color: $color-gray-80;
+  padding: 60px 0px 60px 0px;
+}
+
+footer address  {
+  margin: 20px auto 0px auto;
+}
+
+footer h2 > a  {
+  text-shadow: -1px 1px 0px $color-gray-80,
+               -2px 2px 0px $color-blue;
+}
+
+footer a:link  {
+  color: $color-white;
+}
+
+footer a:hover  {
+  color: $color-blue-light;
+}
+
+.bbb  {
+  margin: 30px auto 0px auto;
+  opacity: .1;
+}
+
+.iicrc  {
+  margin: 30px auto 0px auto;
+  opacity: .1;
+}
+
+.checkers {
+  background-color: $color-gray-80;
+}
+
+.checkers_bg {
+  height: 20px;
+  background-image: url(../img/checkers.svg);
+  background-size: contain;
+  opacity: .1;
+}

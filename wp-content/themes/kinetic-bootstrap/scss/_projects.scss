@@ -1,0 +1,49 @@
+/* PROJECTS ///////////////////////////////////////////////////////////////// */
+
+.page-header {
+  border: none;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+
+.projectTitle {
+  padding: 20px 0 10px 0;
+}
+
+.projectTitle a  {
+  color: $color-blue-light;
+  font-size: 1.5em;
+  text-shadow:
+    -1px 1px 0px $color-blue,
+    -2px 2px 0px $color-blue;
+}
+
+.projectTitle a:hover  {
+  color: $color-blue;
+  text-shadow:
+    -1px 1px 0px $color-blue-light,
+    -2px 2px 0px $color-blue-light;
+}
+
+.box-before-after  {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.box-photo-caption  {
+  display: inline-block;
+  max-width: 49%;
+}
+
+.before  {
+  margin-right: 10px;
+}
+
+.row .beforeAfter {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.projects p {
+  margin: 10px 0 10px;
+}

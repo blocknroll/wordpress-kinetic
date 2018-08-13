@@ -1,0 +1,294 @@
+/* FONTS //////////////////////////////////////////////////////////////////// */
+
+@font-face {
+    font-family: 'SteelfishRgRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/steelfish_regular/steelfish_rg-webfont.eot');
+    src: url('../fonts/steelfish_regular/steelfish_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/steelfish_regular/steelfish_rg-webfont.woff') format('woff'),
+         url('../fonts/steelfish_regular/steelfish_rg-webfont.ttf') format('truetype'),
+         url('../fonts/steelfish_regular/steelfish_rg-webfont.svg#SteelfishRgRegular') format('svg');
+}
+
+$font-sans-serif : Arial, Helvetica, sans-serif;
+$font-heading    : 'SteelfishRgRegular', 'Open Sans Condensed', $font-sans-serif;
+$font-body       : 'Open Sans Condensed', $font-sans-serif;
+
+
+h1, h2, h3, h4, h5, h6, h1 > a  {
+  font-family: $font-heading;
+  text-transform: uppercase;
+}
+
+p, ul, li, a, footer  {
+  font-family: $font-body;
+  font-weight: 300;
+}
+
+p {
+  color: $color-gray-80;
+}
+
+a,
+a:visited,
+a:active  {
+  color: $color-gray-80;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-blue-light;
+  text-decoration: none;
+}
+
+h1  {
+  font-size: 3.0em;
+  letter-spacing: 0.05em;
+  color: $color-blue;
+  padding: 0px 30px 40px 30px;
+  margin: 0px auto 0px auto;
+  max-width: 100%;
+  height: auto;
+  text-shadow:
+    -1px 1px 0px $color-blue-light,
+    -2px 2px 0px $color-blue-light;
+}
+
+h2  {
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  color: $color-blue;
+  padding: 0px 30px 20px 30px;
+  margin: 0px auto 0px auto;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  text-shadow:
+    -1px 1px 0px $color-blue-light,
+    -2px 2px 0px $color-blue-light;
+}
+
+h2 > a {
+  color: $color-blue;
+  font-family: $font-heading;
+  font-size: 1.5em;
+  text-shadow:
+    -1px 1px 0px $color-blue-light,
+    -2px 2px 0px $color-blue-light;
+}
+
+h2 > a:hover  {
+  color: $color-blue-light;
+  text-shadow:
+    -1px 1px 0px $color-blue,
+    -2px 2px 0px $color-blue;
+}
+
+.emergency {
+  margin: 10px auto 20px auto;
+  letter-spacing: 0.05em;
+  text-shadow:
+    -1px 1px 0px $color-blue,
+    -2px 2px 0px $color-blue;
+}
+
+.overview      {
+  font-size: 1.5em;
+  color: $color-gray-80;
+  margin: 0px 30px 30px 30px;
+  text-align: left;
+}
+
+.overview hr {
+  margin: 40px auto 30px auto;
+  max-width: 100%;
+}
+
+.caption      {
+  font-size: 1.4em;
+  color: $color-gray-80;
+  margin: 5px auto 40px auto;
+}
+
+.dropCap {
+  color: $color-blue;
+  float: left;
+  font-family: $font-heading;
+  font-size: 60px;
+  line-height: 32px;
+  padding: 4px 3px 0 0;
+  text-shadow:
+    -1px 1px 0px $color-blue-light,
+    -2px 2px 0px $color-blue-light;
+}
+
+.text   {
+  max-width: 100%;
+  margin: 0px auto 0px auto;
+}
+
+.text p  {
+  font-size: 1.5em;
+  color: $color-gray-80;
+  margin: 0px auto 0px auto;
+  text-align: justify;
+}
+
+.text strong  {
+  font-size: 1.0em;
+  color: $color-gray-80;
+}
+
+.text em  {
+  font-size: 1.0em;
+  color: $color-gray-80;
+}
+
+.slogan {
+  margin: 0 auto 60px auto;
+}
+
+address {
+  font-size: 1.4em;
+  line-height: 1.4;
+  margin: 20px 0px 40px 0px;
+}
+
+address strong  {
+  color: $color-gray-80;
+  font-family: $font-heading;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+address .title  {
+  color: $color-blue-light;
+  font-family: $font-heading;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+
+// PE-ICONS /////////////////////////////////
+@font-face {
+	font-family: 'Pe-icon-social';
+  src:url('../fonts/pe-icon-social/fonts/Pe-icon-social.eot');
+  src:url('../fonts/pe-icon-social/fonts/Pe-icon-social.eot') format('embedded-opentype'),
+      url('../fonts/pe-icon-social/fonts/Pe-icon-social.woff') format('woff'),
+      url('../fonts/pe-icon-social/fonts/Pe-icon-social.ttf') format('truetype'),
+      url('../fonts/pe-icon-social/fonts/Pe-icon-social.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="pe-so-"], [class*=" pe-so-"] {
+	display: inline-block;
+	font-family: 'Pe-icon-social';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/*border: 1px solid #eaeaea;*/
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 7px;
+	color: #1a1a1a;
+	display: inline-block;
+	font-size: 48px;
+	margin: 30px 8px 0px 8px;
+	padding: 10px 0;
+	/*transition: padding 150ms linear 0s, width 150ms linear 0s, font-size 150ms linear 0s;*/
+	width: 50px;
+	opacity: 0.1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.socialIcons 	p > a:link,	a:visited	{
+	color: rgba(51, 51, 51, 1);
+	padding: 10px 0;
+	font-size: 1.0em;
+	text-shadow: none;
+}
+
+
+
+
+
+
+
+.pe-so-aim:before {
+	content: "\e600";
+}
+.pe-so-amazon:before {
+	content: "\e601";
+}
+.pe-so-behance:before {
+	content: "\e602";
+}
+.pe-so-deviantart:before {
+	content: "\e603";
+}
+.pe-so-dribbble:before {
+	content: "\e604";
+}
+.pe-so-facebook:before {
+	content: "\e605";
+}
+.pe-so-flickr:before {
+	content: "\e606";
+}
+.pe-so-forrst:before {
+	content: "\e607";
+}
+.pe-so-google-plus:before {
+	content: "\e608";
+}
+.pe-so-lastfm:before {
+	content: "\e609";
+}
+.pe-so-linkedin:before {
+	content: "\e60a";
+}
+.pe-so-love:before {
+	content: "\e60b";
+}
+.pe-so-picasa:before {
+	content: "\e60c";
+}
+.pe-so-pininterest:before {
+	content: "\e60d";
+}
+.pe-so-rss:before {
+	content: "\e60e";
+}
+.pe-so-skype:before {
+	content: "\e60f";
+}
+.pe-so-tumblr:before {
+	content: "\e610";
+}
+.pe-so-twitter:before {
+	content: "\e611";
+}
+.pe-so-vimeo:before {
+	content: "\e612";
+}
+.pe-so-yahoo:before {
+	content: "\e613";
+}
+.pe-so-yelp:before {
+	content: "\e614";
+}
+.pe-so-youtube:before {
+	content: "\e615";
+}
