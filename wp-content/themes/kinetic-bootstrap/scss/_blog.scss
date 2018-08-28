@@ -1,34 +1,37 @@
-/* BLOG ///////////////////////////////////////////////////////////////////// */
+//* BLOG /////////////////////////////////////////////////////////////////// */
 
 .post  {
-  margin: 40px 0 40px 0;
+  margin: 40px 0;
+}
+
+.post-title {
+  margin: 0 0 20px;
 }
 
 .post h2 > a {
   color: $color-blue;
-  padding: 0px 30px 20px 30px;
-  text-shadow:
-    -1px 1px 0px $color-blue-light,
-    -2px 2px 0px $color-blue-light;
 }
 
 .post h2 > a:hover  {
   color: $color-blue-light;
-  text-shadow:
-    -1px 1px 0px $color-blue,
-    -2px 2px 0px $color-blue;
+  text-shadow: -1px 1px 0 $color-blue,
+               -2px 2px 0 $color-blue;
 }
 
-.post p  {
-  color: $color-gray-80;
+.post-info,
+.post-info a {
+  color: $color-gray-40;
+  text-align: center;
+}
+
+.post p {
   font-size: 1.5em;
   max-width: 100%;
   margin: 0px auto 0px auto;
   padding: 0px 0px 20px 0px;
-  text-align: center;
 }
 
-.postBody p  {
+.post-body p {
   text-align: justify;
 }
 
@@ -38,7 +41,7 @@
   text-align: left;
 }
 
-.widget ul  {
+.widget ul {
   font-size: 1.2em;
   padding: 0 0 0 18px;
 }
