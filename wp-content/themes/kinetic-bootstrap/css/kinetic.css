@@ -39,7 +39,6 @@ h2 {
   font-size: 3.0em;
   letter-spacing: 0.05em;
   color: #34679d;
-  padding: 20px 30px;
   margin: 0px auto 0px auto;
   max-width: 100%;
   height: auto;
@@ -56,8 +55,8 @@ h2 > a:hover {
   text-shadow: -1px 1px 0px #34679d, -2px 2px 0px #34679d; }
 
 .page-header {
-  border: none;
-  margin: 40px 0 0 0;
+  border: 0;
+  margin: 40px 0;
   padding: 0; }
 
 .emergency {
@@ -68,7 +67,7 @@ h2 > a:hover {
 .overview {
   font-size: 1.5em;
   color: #333333;
-  margin: 30px 30px 30px 30px;
+  margin: 0 30px 30px 30px;
   text-align: left; }
 
 .overview hr {
@@ -246,13 +245,13 @@ hr {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
+  background-color: rgba(0, 0, 0, 0.3);
   border-image: none;
   border-right: 0 none;
   border-style: solid none none;
   border-width: 1px 0 0;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  background-color: rgba(0, 0, 0, 0.3); }
+  margin: 40px 0;
+  max-width: 700px; }
 
 .hrSpacer {
   -moz-border-bottom-colors: none;
@@ -693,15 +692,14 @@ now override the 3.3 new styles for modern browsers & apply opacity
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 /* PROJECTS ///////////////////////////////////////////////////////////////// */
-.projectTitle {
-  padding: 20px 0 0 0; }
+.project-title {
+  padding: 0 0 20px; }
 
-.projectTitle a {
+.project-title a {
   color: #95add2;
-  font-size: 1.5em;
-  text-shadow: -1px 1px 0px #34679d, -2px 2px 0px #34679d; }
+  text-shadow: -1px 1px 0 #34679d, -2px 2px 0 #34679d; }
 
-.projectTitle a:hover {
+.project-title a:hover {
   color: #34679d;
   text-shadow: -1px 1px 0px #95add2, -2px 2px 0px #95add2; }
 
@@ -716,12 +714,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .before {
   margin-right: 10px; }
 
-.row .beforeAfter {
-  margin-bottom: 20px;
-  font-size: 1.5em; }
-
-.projects p {
-  margin: 10px 0 10px; }
+.before-after {
+  font-size: 1.5em;
+  margin-bottom: 60px; }
 
 /* BLOG ///////////////////////////////////////////////////////////////////// */
 .post {
@@ -847,19 +842,6 @@ footer a:hover {
     font-size: 4em;
     max-width: 700px; }
 
-  hr {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-image: none;
-    border-right: 0 none;
-    border-style: solid none none;
-    border-width: 1px 0 0;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    max-width: 700px; }
-
   .dropCap {
     font-size: 70px;
     line-height: 41px;
@@ -884,7 +866,7 @@ footer a:hover {
 
   .overview {
     max-width: 700px;
-    margin: 30px auto 30px auto; }
+    margin: 0 auto 30px auto; }
 
   .watermark_responsive {
     max-width: 700px; }

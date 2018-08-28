@@ -53,7 +53,7 @@
         <!-- project title row ---------------------------------->
         <div class="row">
           <div class="col-md-12">
-            <h2 class="projectTitle">
+            <h2 class="project-title">
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </h2>
           </div>
@@ -73,7 +73,7 @@
 
 
         <!-- project images row ----------------------------------->
-        <div class="row beforeAfter">
+        <div class="row before-after">
 
           <!-- first-image ---------------------------------------->
           <div class="col-sm-6">
@@ -97,6 +97,8 @@
           </div>
 
         </div>
+
+        <hr>
 
         <?php endwhile; endif; ?>
 

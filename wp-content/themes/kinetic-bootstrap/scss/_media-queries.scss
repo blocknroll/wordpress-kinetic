@@ -90,20 +90,6 @@
     max-width: 700px;
   }
 
-  hr {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-image: none;
-    border-right: 0 none;
-    border-style: solid none none;
-    border-width: 1px 0 0;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    max-width: 700px;
-  }
-
   .dropCap {
     font-size: 70px;
     line-height: 41px;
@@ -133,7 +119,7 @@
 
   .overview  {
     max-width: 700px;
-    margin: 30px auto 30px auto;
+    margin: 0 auto 30px auto;
   }
 
   .watermark_responsive   {
