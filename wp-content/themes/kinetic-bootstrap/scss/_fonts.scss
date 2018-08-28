@@ -46,7 +46,6 @@ h1  {
   font-size: 3.0em;
   letter-spacing: 0.05em;
   color: $color-blue;
-  padding: 0px 30px 40px 30px;
   margin: 0px auto 0px auto;
   max-width: 100%;
   height: auto;
@@ -56,10 +55,10 @@ h1  {
 }
 
 h2  {
-  font-size: 1.5em;
+  font-size: 3.0em;
   letter-spacing: 0.05em;
   color: $color-blue;
-  padding: 0px 30px 20px 30px;
+  padding: 20px 30px;
   margin: 0px auto 0px auto;
   max-width: 100%;
   height: auto;
@@ -72,7 +71,6 @@ h2  {
 h2 > a {
   color: $color-blue;
   font-family: $font-heading;
-  font-size: 1.5em;
   text-shadow:
     -1px 1px 0px $color-blue-light,
     -2px 2px 0px $color-blue-light;
@@ -83,6 +81,12 @@ h2 > a:hover  {
   text-shadow:
     -1px 1px 0px $color-blue,
     -2px 2px 0px $color-blue;
+}
+
+.page-header {
+  border: none;
+  margin: 40px 0 0 0;
+  padding: 0;
 }
 
 .emergency {
@@ -96,7 +100,7 @@ h2 > a:hover  {
 .overview      {
   font-size: 1.5em;
   color: $color-gray-80;
-  margin: 0px 30px 30px 30px;
+  margin: 30px 30px 30px 30px;
   text-align: left;
 }
 
