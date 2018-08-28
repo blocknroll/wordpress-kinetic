@@ -30,17 +30,16 @@ h1 {
   font-size: 3.0em;
   letter-spacing: 0.05em;
   color: #34679d;
-  padding: 0px 30px 40px 30px;
   margin: 0px auto 0px auto;
   max-width: 100%;
   height: auto;
   text-shadow: -1px 1px 0px #95add2, -2px 2px 0px #95add2; }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 3.0em;
   letter-spacing: 0.05em;
   color: #34679d;
-  padding: 0px 30px 20px 30px;
+  padding: 20px 30px;
   margin: 0px auto 0px auto;
   max-width: 100%;
   height: auto;
@@ -50,12 +49,16 @@ h2 {
 h2 > a {
   color: #34679d;
   font-family: "SteelfishRgRegular", "Open Sans Condensed", Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
   text-shadow: -1px 1px 0px #95add2, -2px 2px 0px #95add2; }
 
 h2 > a:hover {
   color: #95add2;
   text-shadow: -1px 1px 0px #34679d, -2px 2px 0px #34679d; }
+
+.page-header {
+  border: none;
+  margin: 40px 0 0 0;
+  padding: 0; }
 
 .emergency {
   margin: 10px auto 20px auto;
@@ -65,7 +68,7 @@ h2 > a:hover {
 .overview {
   font-size: 1.5em;
   color: #333333;
-  margin: 0px 30px 30px 30px;
+  margin: 30px 30px 30px 30px;
   text-align: left; }
 
 .overview hr {
@@ -269,7 +272,7 @@ hr {
 
 .page-title {
   padding-bottom: 0;
-  margin: 30px 0 0;
+  margin: 30px 0 30px 0;
   border-bottom: 0; }
 
 .intro {
@@ -690,13 +693,8 @@ now override the 3.3 new styles for modern browsers & apply opacity
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 /* PROJECTS ///////////////////////////////////////////////////////////////// */
-.page-header {
-  border: none;
-  margin: 30px 0 0 0;
-  padding: 0; }
-
 .projectTitle {
-  padding: 20px 0 10px 0; }
+  padding: 20px 0 0 0; }
 
 .projectTitle a {
   color: #95add2;
@@ -729,10 +727,8 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .post {
   margin: 40px 0 40px 0; }
 
-.post h2,
 .post h2 > a {
   color: #34679d;
-  font-size: 1.8em;
   padding: 0px 30px 20px 30px;
   text-shadow: -1px 1px 0px #95add2, -2px 2px 0px #95add2; }
 
@@ -849,8 +845,7 @@ footer a:hover {
 
   h1 {
     font-size: 4em;
-    max-width: 700px;
-    padding: 0px 0px 30px 0px; }
+    max-width: 700px; }
 
   hr {
     -moz-border-bottom-colors: none;
@@ -889,7 +884,7 @@ footer a:hover {
 
   .overview {
     max-width: 700px;
-    margin: 0px auto 30px auto; }
+    margin: 30px auto 30px auto; }
 
   .watermark_responsive {
     max-width: 700px; }
