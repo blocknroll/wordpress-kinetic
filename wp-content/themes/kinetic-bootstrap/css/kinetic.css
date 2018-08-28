@@ -718,28 +718,31 @@ now override the 3.3 new styles for modern browsers & apply opacity
   font-size: 1.5em;
   margin-bottom: 60px; }
 
-/* BLOG ///////////////////////////////////////////////////////////////////// */
 .post {
-  margin: 40px 0 40px 0; }
+  margin: 40px 0; }
+
+.post-title {
+  margin: 0 0 20px; }
 
 .post h2 > a {
-  color: #34679d;
-  padding: 0px 30px 20px 30px;
-  text-shadow: -1px 1px 0px #95add2, -2px 2px 0px #95add2; }
+  color: #34679d; }
 
 .post h2 > a:hover {
   color: #95add2;
-  text-shadow: -1px 1px 0px #34679d, -2px 2px 0px #34679d; }
+  text-shadow: -1px 1px 0 #34679d, -2px 2px 0 #34679d; }
+
+.post-info,
+.post-info a {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center; }
 
 .post p {
-  color: #333333;
   font-size: 1.5em;
   max-width: 100%;
   margin: 0px auto 0px auto;
-  padding: 0px 0px 20px 0px;
-  text-align: center; }
+  padding: 0px 0px 20px 0px; }
 
-.postBody p {
+.post-body p {
   text-align: justify; }
 
 .widget {

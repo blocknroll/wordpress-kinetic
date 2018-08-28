@@ -25,16 +25,16 @@
                    alt="<?php echo $thumbnail_meta; ?>">
             </div>
 
-            <h2><?php the_title(); ?></h2>
+            <h2 class="post-title"><?php the_title(); ?></h2>
 
-            <p><em>
+            <p class="post-info"><em>
               By <?php the_author(); ?>
               on <?php echo the_time('l, F jS, Y'); ?>
               in <?php the_category( ', '); ?>.
               <!-- <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a> -->
             </em></p>
 
-            <div class="postBody">
+            <div class="post-body">
               <?php the_content(); ?>
             </div>
 
