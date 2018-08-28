@@ -1,22 +1,19 @@
 /* PROJECTS ///////////////////////////////////////////////////////////////// */
 
-.projectTitle {
-  padding: 20px 0 0 0;
+.project-title {
+  padding: 0 0 20px;
 }
 
-.projectTitle a  {
+.project-title a {
   color: $color-blue-light;
-  font-size: 1.5em;
-  text-shadow:
-    -1px 1px 0px $color-blue,
-    -2px 2px 0px $color-blue;
+  text-shadow: -1px 1px 0 $color-blue,
+               -2px 2px 0 $color-blue;
 }
 
-.projectTitle a:hover  {
+.project-title a:hover  {
   color: $color-blue;
-  text-shadow:
-    -1px 1px 0px $color-blue-light,
-    -2px 2px 0px $color-blue-light;
+  text-shadow: -1px 1px 0px $color-blue-light,
+               -2px 2px 0px $color-blue-light;
 }
 
 .box-before-after  {
@@ -33,11 +30,7 @@
   margin-right: 10px;
 }
 
-.row .beforeAfter {
-  margin-bottom: 20px;
+.before-after {
   font-size: 1.5em;
-}
-
-.projects p {
-  margin: 10px 0 10px;
+  margin-bottom: 60px;
 }
